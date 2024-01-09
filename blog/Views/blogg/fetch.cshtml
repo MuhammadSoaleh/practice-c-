@@ -1,0 +1,37 @@
+﻿@model IEnumerable<blogs.Models.blogg>
+<h1>fetch blog</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">TITLE</th>
+            <th scope="col">DESCRIPTION</th>
+            <th scope="col">SUB-HEADING</th>
+            <th scope="col">CONTENT</th>
+            <th scope="col">AUTHOR</th>
+            <th scope="col">ACTIONS</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                
+                <td>@item.id</td>
+                <td>@item.title</td>
+                <td>@item.description</td>
+                <td>@item.subheading</td>
+                <td>@item.content</td>
+                
+                <td>@item.author</td>
+                <td><a class="btn btn-primary" asp-action="edit" asp-route-id=@item.id>EDIT</a> <a class="btn btn-danger" asp-action="delete" asp-route-id="@item.id">DELETE</a></td>
+                
+                
+            </tr>
+        }
+        
+      
+    </tbody>
+</table>
+

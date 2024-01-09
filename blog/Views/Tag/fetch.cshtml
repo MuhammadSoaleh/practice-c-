@@ -1,0 +1,16 @@
+﻿@model IEnumerable<blogs.Models.Tag>
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>ACTIONS</th>
+    </tr>
+    @foreach(var item in Model ) {        
+    <tr>
+        <td>@item.id</td>
+        <td>@item.name</td> 
+            <td><a class="btn btn-primary" asp-action="edit" asp-route-id=@item.id>EDIT</a> <a class="btn btn-danger" asp-action="delete" asp-route-id="@item.id">DELETE</a></td>
+    </tr>
+ }
+   
+</table>
