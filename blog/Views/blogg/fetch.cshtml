@@ -1,20 +1,16 @@
 ﻿@model IEnumerable<blogs.Models.blogg>;
 @foreach(var item in Model){
-   <div class="card" style="width: 18rem;">
-  <img src="~/@item.image" class="card-img-top" alt="...">
+   <div class="card mb-3">
+  
   <div class="card-body">
     <h5 class="card-title">@item.title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">@item.author</h5>
+    <p class="card-text">@item.description.</p>
+    <p class="card-text"><small class="text-body-secondary">@item.content</small></p>
+    <p class="card-text"><small class="text-body-secondary">@item.subheading</small></p>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">@item.description</li>
-    <li class="list-group-item">@item.subheading</li>
-    <li class="list-group-item">@item.content</li>
-    <li class="list-group-item">@item.author</li>
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>}
+        <img src="~/@item.image" class="card-img-top" alt="...">
+</div>
+
+}
 
