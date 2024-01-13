@@ -245,6 +245,18 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Muhammad Rafay\\source\\repos\\blog\\blog\\wwwroot\\uploads\\363Coursera BW8HPMJA3ZF8_page-0001.jpg",
+      "PackagePath": "staticwebassets\\uploads\\363Coursera BW8HPMJA3ZF8_page-0001.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Muhammad Rafay\\source\\repos\\blog\\blog\\wwwroot\\uploads\\Coursera BW8HPMJA3ZF8_page-0001.jpg157",
+      "PackagePath": "staticwebassets\\uploads\\Coursera BW8HPMJA3ZF8_page-0001.jpg157"
+    },
+    {
+      "Id": "C:\\Users\\Muhammad Rafay\\source\\repos\\blog\\blog\\wwwroot\\uploads\\IMG_20231117_110219.jpg650",
+      "PackagePath": "staticwebassets\\uploads\\IMG_20231117_110219.jpg650"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.blogs.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

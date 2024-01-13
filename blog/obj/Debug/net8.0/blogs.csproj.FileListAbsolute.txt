@@ -134,3 +134,4 @@ C:\Users\Muhammad Rafay\source\repos\blog\blog\obj\Debug\net8.0\refint\blogs.dll
 C:\Users\Muhammad Rafay\source\repos\blog\blog\obj\Debug\net8.0\blogs.pdb
 C:\Users\Muhammad Rafay\source\repos\blog\blog\obj\Debug\net8.0\blogs.genruntimeconfig.cache
 C:\Users\Muhammad Rafay\source\repos\blog\blog\obj\Debug\net8.0\ref\blogs.dll
+C:\Users\Muhammad Rafay\source\repos\blog\blog\obj\Debug\net8.0\blogs.sourcelink.json

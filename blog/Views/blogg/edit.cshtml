@@ -1,10 +1,32 @@
-﻿@model blogs.Models.blogg;
-<h1>edit blogs</h1>
-<form method="post">
+﻿@model blogs.Models.blogg
+<h1>EDIT BLOGS</h1>
+<form method="post" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">NAME</label>
+        <label for="exampleInputEmail1" class="form-label">TITLE</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="title">
     </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">DESCRIPTION</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="description">
+    </div>
 
-    <button type="submit" class="btn btn-primary">EDIT</button>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">SUB-HEADING</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="subheading">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">CONTENT</label>
+        <textarea type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="content"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">AUTHOR</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="author">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">image</label>
+        <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="image" name="img">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Edit</button>
 </form>

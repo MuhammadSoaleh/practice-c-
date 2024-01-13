@@ -1,37 +1,20 @@
-﻿@model IEnumerable<blogs.Models.blogg>
-<h1>fetch blog</h1>
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">TITLE</th>
-            <th scope="col">DESCRIPTION</th>
-            <th scope="col">SUB-HEADING</th>
-            <th scope="col">CONTENT</th>
-            <th scope="col">AUTHOR</th>
-            <th scope="col">ACTIONS</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                
-                <td>@item.id</td>
-                <td>@item.title</td>
-                <td>@item.description</td>
-                <td>@item.subheading</td>
-                <td>@item.content</td>
-                
-                <td>@item.author</td>
-                <td><a class="btn btn-primary" asp-action="edit" asp-route-id=@item.id>EDIT</a> <a class="btn btn-danger" asp-action="delete" asp-route-id="@item.id">DELETE</a></td>
-                
-                
-            </tr>
-        }
-        
-      
-    </tbody>
-</table>
+﻿@model IEnumerable<blogs.Models.blogg>;
+@foreach(var item in Model){
+   <div class="card" style="width: 18rem;">
+  <img src="~/@item.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">@item.title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">@item.description</li>
+    <li class="list-group-item">@item.subheading</li>
+    <li class="list-group-item">@item.content</li>
+    <li class="list-group-item">@item.author</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>}
 
