@@ -1,6 +1,8 @@
 ﻿using blogs.data;
 using blogs.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace blogs.Controllers
 {
@@ -30,7 +32,10 @@ namespace blogs.Controllers
         }
         public IActionResult fetch()
         {
+            
             return View(applicationDBContext.Tags.ToList());
+
+            
         }
         public IActionResult delete(int id)
         {
