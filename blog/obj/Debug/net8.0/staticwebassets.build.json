@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3MNxKea8DNdqw6W7E7dqPlitvrlGcRHYBHsab5YX3Lg=",
+  "Hash": "4yvKZfxecQTNnYQyyAMicLA2cs4pMoX42jufRbe0Xno=",
   "Source": "blogs",
   "BasePath": "_content/blogs",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\363Coursera BW8HPMJA3ZF8_page-0001.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Muhammad Rafay\\source\\repos\\blog\\blog\\wwwroot\\uploads\\418Coursera BW8HPMJA3ZF8_page-0001.jpg",
+      "SourceId": "blogs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Muhammad Rafay\\source\\repos\\blog\\blog\\wwwroot\\",
+      "BasePath": "_content/blogs",
+      "RelativePath": "uploads/418Coursera BW8HPMJA3ZF8_page-0001.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\418Coursera BW8HPMJA3ZF8_page-0001.jpg"
     },
     {
       "Identity": "C:\\Users\\Muhammad Rafay\\source\\repos\\blog\\blog\\wwwroot\\uploads\\Coursera BW8HPMJA3ZF8_page-0001.jpg157",

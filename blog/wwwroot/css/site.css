@@ -20,3 +20,56 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.primary-btn {
+    /* display: inline-block; */
+    font-size: 15px;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    padding: 14px 32px 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+    .primary-btn:hover:before {
+        height: 100%;
+        width: 100%;
+    }
+
+    .primary-btn:hover:after {
+        height: 100%;
+        width: 100%;
+    }
+
+    .primary-btn:before {
+       
+       
+        border-left: 2px solid #f4e6ff;
+        border-top: 2px solid #f4e6ff;
+     
+        z-index: -1;
+        -webkit-transition: all, 0.7s;
+        -o-transition: all, 0.7s;
+        transition: all, 0.7s;
+    }
+
+    .primary-btn:after {
+       
+        height: 30px;
+        width: 30px;
+        border-right: 2px solid #f4e6ff;
+        
+        border-bottom: 2px solid #f4e6ff;
+        
+        
+        z-index: -1;
+        -webkit-transition: all, 0.7s;
+        -o-transition: all, 0.7s;
+        transition: all, 0.7s;
+    }
+nav {
+    background-color: #f4e6ff;
+}

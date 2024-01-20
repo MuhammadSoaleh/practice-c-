@@ -17,23 +17,7 @@ namespace blogs.Controllers
         {
             return View();
         }
-        //[HttpPost]
-        //public IActionResult Addblog(blogg blog)
-        //{
-        //    var blog1 = new blogg
-        //    {
-        //        title = blog.title,
-        //        description = blog.description,
-        //        subheading = blog.subheading,
-        //        content = blog.content,
-        //        author = blog.author,
-        //        image = blog.image
-
-        //    };
-        //    applicationDBContext.bloggs.Add(blog1);
-        //    applicationDBContext.SaveChanges();
-        //    return View();
-        //}
+    
         public IActionResult fetch()
         {
             return View(applicationDBContext.bloggs.ToList());
@@ -50,10 +34,16 @@ namespace blogs.Controllers
 
             return View(applicationDBContext.bloggs.Find(id));
         }
-        [HttpPost]
-        public IActionResult edit(blogg blog)
+
+        public IActionResult Fetchblog(int id)
         {
 
+            return View(applicationDBContext.bloggs.Find(id));
+        }
+        [HttpPost]
+        public IActionResult edit(blogg blog,int id)
+        {
+            
             applicationDBContext.bloggs.Update(blog);
             applicationDBContext.SaveChanges();
             return RedirectToAction("fetch");
@@ -65,7 +55,7 @@ namespace blogs.Controllers
             var ff= Path.GetFileName(img.FileName);
                 Random rn= new Random();
                 var ii = rn.Next(1, 1000);
-                var fn= ii+ff;
+                var fn= ff+ii;
                 var fol= Path.Combine(HttpContext.Request.PathBase.Value ,"wwwroot/uploads");
                 if (!Directory.Exists(fol))
                 {
